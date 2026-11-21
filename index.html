@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f5f0">
+<title>我的小宇宙 · My Little Universe</title>
+<meta name="description" content="一个收集日常、心情与小小快乐的私人角落。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f8f5f0;--ink:#302c2a;--muted:#918983;--rose:#d99e9c;--rose-light:#f2dfdc;--lav:#e9e4f0;--sage:#e5ebe2;--line:#e9e3dc;--white:#fffdfa;--shadow:0 16px 50px #51443b0c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans","Noto Serif SC",sans-serif;line-height:1.7}button,input,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-family:"Noto Serif SC",serif;font-weight:600;letter-spacing:.04em}.brand-mark{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--rose-light);font-size:17px}.nav{display:flex;gap:27px;font-size:13px;color:var(--muted)}.nav a{color:inherit;text-decoration:none}.nav a:hover{color:var(--rose)}.hero{padding:76px 0 58px;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--rose);font-weight:700}.hero h1{font-family:"Noto Serif SC",serif;font-size:clamp(38px,6vw,66px);line-height:1.24;font-weight:500;letter-spacing:.02em;margin:18px 0}.hero h1 em{font-style:normal;color:#c68f90}.hero p{color:var(--muted);font-size:15px;max-width:430px}.hero-actions{display:flex;gap:12px;margin-top:27px;flex-wrap:wrap}.btn{border:0;border-radius:999px;padding:12px 21px;font-size:13px;transition:.2s}.btn-primary{background:var(--ink);color:white}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px #302c2a22}.btn-soft{background:var(--rose-light);color:#875e5d}.hero-art{min-height:310px;position:relative;display:grid;place-items:center}.sun{width:235px;height:235px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff9e9,#ead9ce 72%);box-shadow:0 22px 60px #ad8f7b24;position:relative}.sun:before,.sun:after{content:"";position:absolute;border:1px solid #d8b9a8;border-radius:50%;inset:-23px;transform:rotate(-23deg) scaleY(.42)}.sun:after{transform:rotate(45deg) scaleY(.42);inset:-38px}.sun-core{position:absolute;inset:0;display:grid;place-items:center;font-size:76px}.float-note{position:absolute;background:#fffdfaeb;border:1px solid #fff;border-radius:16px;padding:10px 15px;font-size:12px;color:#82766f;box-shadow:var(--shadow)}.note-a{top:28px;left:4px;transform:rotate(-6deg)}.note-b{right:0;bottom:35px;transform:rotate(5deg)}.section{padding:38px 0 48px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}.section-kicker{font-size:10px;letter-spacing:.2em;color:var(--rose);font-weight:700}.section h2{font-family:"Noto Serif SC",serif;font-size:27px;font-weight:500;margin:4px 0 0}.sub{color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}.panel{background:var(--white);border:1px solid #eee8e1;border-radius:22px;padding:25px;box-shadow:var(--shadow)}.panel h3{font-family:"Noto Serif SC",serif;font-size:18px;font-weight:500;margin:0 0 7px}.panel p{font-size:13px;color:var(--muted);margin:0}.mood-options{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.mood{width:56px;height:61px;border:1px solid var(--line);background:#fff;border-radius:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;transition:.18s;color:var(--muted);font-size:10px}.mood span{font-size:23px}.mood:hover,.mood.active{border-color:#d9a3a0;background:#fbefed;transform:translateY(-3px)}.save-row{display:flex;gap:9px}.field{width:100%;border:1px solid var(--line);background:#fffdfa;border-radius:12px;padding:11px 13px;outline:none;font-size:13px;color:var(--ink)}.field:focus{border-color:#d6a09e}.save-row .btn{white-space:nowrap}.quote-card{background:linear-gradient(135deg,#f3e8e4,#eeeaf3);display:flex;flex-direction:column;justify-content:space-between;min-height:230px}.quote-mark{font-family:Georgia,serif;font-size:48px;line-height:.8;color:#c99592}.quote{font-family:"Noto Serif SC",serif;font-size:20px;line-height:1.8;color:#5e5250;margin:10px 0 18px}.quote-foot{display:flex;justify-content:space-between;align-items:center;color:#8f817c;font-size:11px}.tiny-btn{border:1px solid #d9cbc6;background:#ffffff80;color:#76645e;border-radius:999px;padding:7px 12px;font-size:11px}.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.memory{background:var(--white);border:1px solid #eee8e1;border-radius:18px;padding:18px;min-height:160px;position:relative}.memory .emoji{font-size:24px}.memory time{display:block;color:#b09e94;font-size:10px;letter-spacing:.08em;margin:10px 0 5px}.memory strong{font-family:"Noto Serif SC",serif;font-size:14px;font-weight:500}.memory p{font-size:12px;color:var(--muted);margin:5px 0 0}.memory .react{position:absolute;right:14px;top:14px;border:0;background:none;font-size:16px;opacity:.7}.memory .react.liked{opacity:1;transform:scale(1.18)}.add-memory{margin-top:15px;display:flex;gap:9px;flex-wrap:wrap}.add-memory input{flex:1;min-width:180px}.about{display:grid;grid-template-columns:.75fr 1.25fr;gap:20px;align-items:stretch}.about-art{border-radius:20px;background:linear-gradient(145deg,#e7e0eb,#f1e1dc);display:grid;place-items:center;min-height:190px;font-size:62px}.about-copy{padding:24px 5px}.about-copy p{color:var(--muted);font-size:13px;max-width:560px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.chip{font-size:11px;padding:7px 12px;border-radius:99px;background:#f3eee8;color:#8b7d74}.guestbook textarea{min-height:90px;resize:vertical;margin:15px 0 10px}.messages{display:grid;gap:9px;margin-top:15px}.message{padding:12px 14px;border-radius:13px;background:#f8f4ef;font-size:12px;color:#786d67}.message b{color:#b27f7e;font-weight:600;margin-right:7px}.footer{border-top:1px solid var(--line);padding:27px 0 38px;text-align:center;color:#a59a92;font-size:11px}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);background:#302c2a;color:#fff;padding:10px 17px;border-radius:99px;font-size:12px;opacity:0;pointer-events:none;transition:.25s;z-index:5}.toast.show{opacity:1;transform:translate(-50%,0)}.sparkle{color:#c99491}
+@media(max-width:720px){.wrap{width:min(100% - 30px,540px)}.topbar{height:64px}.nav{gap:13px;font-size:11px}.nav a:nth-child(3){display:none}.hero{padding:48px 0 28px;grid-template-columns:1fr;gap:12px}.hero-art{min-height:235px;order:-1}.sun{width:170px;height:170px}.sun-core{font-size:56px}.note-a{top:15px;left:8%}.note-b{right:6%;bottom:15px}.hero h1{font-size:42px;margin:12px 0}.hero p{font-size:14px}.section{padding:27px 0 35px}.grid,.about{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.memory{min-height:125px}.panel{padding:20px}.section-head{align-items:start;gap:10px}.section h2{font-size:24px}}
+</style>
+</head>
+<body>
+<header class="wrap topbar">
+  <div class="brand"><span class="brand-mark">✦</span><span>我的小宇宙</span></div>
+  <nav class="nav"><a href="#mood">今日心情</a><a href="#diary">日常碎片</a><a href="#about">关于我</a><a href="#guestbook">留言</a></nav>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">A LITTLE UNIVERSE OF MY OWN</div>
+      <h1>把平凡日子<br>过成<span class="sparkle">闪闪发光</span>的样子。</h1>
+      <p>嗨，欢迎来到我的小宇宙。这里收藏一些生活碎片、偶尔冒出的灵感，还有每一个认真感受生活的瞬间。</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#diary" style="text-decoration:none">逛逛我的日常 ↗</a><a class="btn btn-soft" href="#mood" style="text-decoration:none">记录此刻心情 ☁</a></div>
+    </div>
+    <div class="hero-art"><div class="sun"><div class="sun-core">☁️</div></div><div class="float-note note-a">✧ 今天也要对自己好一点</div><div class="float-note note-b">somewhere in my mind ♡</div></div>
+  </section>
+  <section class="section" id="mood">
+    <div class="section-head"><div><div class="section-kicker">MOOD CHECK-IN</div><h2>此刻的心情天气</h2></div><div class="sub" id="today"></div></div>
+    <div class="grid">
+      <div class="panel">
+        <h3>今天的你，是什么天气？</h3><p>选一个最接近此刻心情的小表情吧。</p>
+        <div class="mood-options" id="moods">
+          <button class="mood" data-mood="开心"><span>☀️</span>晴朗</button><button class="mood" data-mood="平静"><span>🌿</span>平静</button><button class="mood" data-mood="期待"><span>✨</span>期待</button><button class="mood" data-mood="疲惫"><span>🌧️</span>疲惫</button><button class="mood" data-mood="低落"><span>🌙</span>低落</button><button class="mood" data-mood="元气"><span>🧸</span>元气</button>
+        </div>
+        <div class="save-row"><input class="field" id="mood-note" placeholder="给今天留一句话（可选）"><button class="btn btn-primary" id="save-mood">保存心情</button></div>
+        <p id="mood-status" style="margin-top:12px;font-size:11px"></p>
+      </div>
+      <div class="panel quote-card"><div><div class="quote-mark">“</div><div class="quote" id="quote">生活不是等待暴风雨过去，而是学会在雨中跳舞。</div></div><div class="quote-foot"><span>今日份小小灵感</span><button class="tiny-btn" id="new-quote">换一句 ↻</button></div></div>
+    </div>
+  </section>
+  <section class="section" id="diary">
+    <div class="section-head"><div><div class="section-kicker">LITTLE MOMENTS</div><h2>日常收藏夹</h2></div><div class="sub">平凡生活里的小确幸 ♡</div></div>
+    <div class="timeline" id="timeline">
+      <article class="memory"><span class="emoji">☕</span><button class="react" aria-label="喜欢">♡</button><time>THE SLOW MORNING</time><strong>给自己一个慢慢醒来的早晨</strong><p>咖啡香气、窗边的光，还有不赶时间的幸福。</p></article>
+      <article class="memory"><span class="emoji">🌷</span><button class="react" aria-label="喜欢">♡</button><time>A LITTLE BEAUTY</time><strong>路边遇见一朵漂亮的小花</strong><p>原来快乐有时候真的只需要抬头看一眼。</p></article>
+      <article class="memory"><span class="emoji">🎧</span><button class="react" aria-label="喜欢">♡</button><time>MY SOUNDTRACK</time><strong>循环播放的一首歌</strong><p>把喜欢的旋律，留给今天的自己。</p></article>
+    </div>
+    <div class="add-memory"><input class="field" id="memory-input" placeholder="写下一件今天发生的小事…"><button class="btn btn-primary" id="add-memory">＋ 添加碎片</button></div>
+  </section>
+  <section class="section" id="about">
+    <div class="section-head"><div><div class="section-kicker">A NOTE ABOUT ME</div><h2>关于这个小小星球</h2></div></div>
+    <div class="panel about"><div class="about-art">🌙💫</div><div class="about-copy"><h3>这里是我的私人小宇宙</h3><p>我是一个正在认真生活、持续探索世界的人。喜欢记录灵光一闪的想法，收集可爱的小事，也相信每个普通的今天都值得被好好记住。</p><p>这个角落还在慢慢生长，未来会装进更多故事。谢谢你来看看。✨</p><div class="chips"><span class="chip">☁️ 慢慢生活</span><span class="chip">📷 记录日常</span><span class="chip">🌱 持续成长</span><span class="chip">💗 保持好奇</span></div></div></div>
+  </section>
+  <section class="section guestbook" id="guestbook">
+    <div class="section-head"><div><div class="section-kicker">SAY HELLO</div><h2>留下一个小小脚印</h2></div><div class="sub">写一句话，让这里更热闹 ✉️</div></div>
+    <div class="panel"><h3>给这个小宇宙的留言</h3><p>可以是问候、祝福，或者今天想分享的一句话。</p><textarea class="field" id="guest-input" placeholder="在这里写下你的留言…"></textarea><div style="display:flex;justify-content:flex-end"><button class="btn btn-primary" id="send-message">送出留言 ♡</button></div><div class="messages" id="messages"></div></div>
+  </section>
+</main>
+<footer class="footer"><div>MADE WITH ♡ & A LITTLE MAGIC</div><div style="margin-top:5px">愿你在自己的宇宙里，永远自在闪耀。</div></footer>
+<div class="toast" id="toast"></div>
+<script>
+const $=s=>document.querySelector(s);
+const today=new Date();$('#today').textContent=today.toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric',weekday:'long'});
+const toast=(s)=>{const t=$('#toast');t.textContent=s;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2100)};
+let selectedMood='';
+document.querySelectorAll('.mood').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.mood').forEach(x=>x.classList.remove('active'));b.classList.add('active');selectedMood=b.dataset.mood}));
+$('#save-mood').addEventListener('click',()=>{if(!selectedMood){toast('先选一个今天的心情吧 ☁️');return}const entry={mood:selectedMood,note:$('#mood-note').value,date:new Date().toLocaleString('zh-CN')};localStorage.setItem('little-universe-mood',JSON.stringify(entry));$('#mood-status').textContent='已收藏：'+selectedMood+' · '+(entry.note||'今天也认真感受了生活');toast('心情已收进小宇宙 ♡')});
+const quotes=['生活不是等待暴风雨过去，而是学会在雨中跳舞。','慢一点也没关系，花会沿路盛开。','你不必时时闪耀，安静发光也很好。','把今天过好，就是很了不起的事。','愿你有前进一寸的勇气，也有后退一尺的从容。','所有美好都值得一点耐心。','记得给自己一个拥抱，你已经很努力了。'];
+$('#new-quote').addEventListener('click',()=>{let q=$('#quote').textContent,n;do{n=quotes[Math.floor(Math.random()*quotes.length)]}while(n===q);$('#quote').textContent=n});
+document.querySelectorAll('.react').forEach(b=>b.addEventListener('click',()=>{b.classList.toggle('liked');b.textContent=b.classList.contains('liked')?'♥':'♡'}));
+$('#add-memory').addEventListener('click',()=>{const v=$('#memory-input').value.trim();if(!v){toast('先写下一件小事吧 ✨');return}const el=document.createElement('article');el.className='memory';const d=new Date();el.innerHTML='<span class="emoji">💌</span><button class="react" aria-label="喜欢">♡</button><time>'+d.toLocaleDateString('zh-CN')+'</time><strong></strong><p>刚刚收藏的一段生活碎片。</p>';el.querySelector('strong').textContent=v;el.querySelector('.react').addEventListener('click',e=>{e.currentTarget.classList.toggle('liked');e.currentTarget.textContent=e.currentTarget.classList.contains('liked')?'♥':'♡'});$('#timeline').prepend(el);$('#memory-input').value='';toast('新碎片已放进收藏夹 ♡')});
+$('#send-message').addEventListener('click',()=>{const v=$('#guest-input').value.trim();if(!v){toast('写点什么再送出吧 ✉️');return}const el=document.createElement('div');el.className='message';const b=document.createElement('b');b.textContent='一位访客：';el.append(b,document.createTextNode(v));$('#messages').prepend(el);$('#guest-input').value='';toast('留言送达，谢谢你的温柔 ♡')});
+try{const m=JSON.parse(localStorage.getItem('little-universe-mood')||'null');if(m){$('#mood-status').textContent='上次收藏：'+m.mood+' · '+(m.note||m.date)}}catch(e){}
+</script>
+</body>
+</html>
